@@ -4,3 +4,10 @@ resource "aws_vpc" "default" {
     Name = "Test CICD VPC"
   }
 }
+
+resource "aws_vpc" "default" {
+  cidr_block = "192.168.1.0/27"
+  tags = {
+    Name = "Class C VPC"
+  }
+}
