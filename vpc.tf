@@ -1,3 +1,4 @@
+/*
 resource "aws_vpc" "default" {
   cidr_block = "1.2.0.0/16"
   tags = {
@@ -5,9 +6,12 @@ resource "aws_vpc" "default" {
   }
 }
 
+
 resource "aws_vpc" "default2" {
   cidr_block = "192.168.1.0/27"
   tags = {
     Name = "Class C VPC"
   }
 }
+
+*/
