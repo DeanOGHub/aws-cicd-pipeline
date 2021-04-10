@@ -7,7 +7,6 @@ env:
 
 batch:
   fast-fail: false | true
-  build-graph:
 
 phases:
   install:
@@ -17,12 +16,10 @@ phases:
             unzip ./terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/bin && \
             chmod +x /usr/bin/terraform && \
             terraform --version
-
   pre_build:
     commands:
       - terraform init
       - terraform validate
-  
   build:
     commands:
       - terraform plan
